@@ -12,6 +12,7 @@ jobs:
         - name: Install and build
           run: |
             make -f doc/Makefile html
+            touch doc/build/html/.nojekyll
 
         - name: Deploy
           uses: JamesIves/github-pages-deploy-action@4.1.7
